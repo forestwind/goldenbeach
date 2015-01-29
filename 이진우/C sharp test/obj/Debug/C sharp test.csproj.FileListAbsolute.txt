@@ -1,0 +1,12 @@
+C:\Users\Administrator\Desktop\C sharp test\bin\Debug\C sharp test.exe.config
+C:\Users\Administrator\Desktop\C sharp test\bin\Debug\C sharp test.exe
+C:\Users\Administrator\Desktop\C sharp test\bin\Debug\C sharp test.pdb
+C:\Users\Administrator\Desktop\C sharp test\obj\Debug\C sharp test.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\C sharp test\obj\Debug\C sharp test.exe
+C:\Users\Administrator\Desktop\C sharp test\obj\Debug\C sharp test.pdb
+C:\Users\Administrator\Desktop\GoldenBeach\이진우\C sharp test\bin\Debug\C sharp test.exe.config
+C:\Users\Administrator\Desktop\GoldenBeach\이진우\C sharp test\bin\Debug\C sharp test.exe
+C:\Users\Administrator\Desktop\GoldenBeach\이진우\C sharp test\bin\Debug\C sharp test.pdb
+C:\Users\Administrator\Desktop\GoldenBeach\이진우\C sharp test\obj\Debug\C sharp test.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\GoldenBeach\이진우\C sharp test\obj\Debug\C sharp test.exe
+C:\Users\Administrator\Desktop\GoldenBeach\이진우\C sharp test\obj\Debug\C sharp test.pdb
