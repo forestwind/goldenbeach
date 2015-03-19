@@ -1,6 +1,0 @@
-C:\Users\Administrator\Desktop\GoldenBeach\이진우\C sharp test client\C sharp test client\bin\Debug\C sharp test client.exe.config
-C:\Users\Administrator\Desktop\GoldenBeach\이진우\C sharp test client\C sharp test client\bin\Debug\C sharp test client.exe
-C:\Users\Administrator\Desktop\GoldenBeach\이진우\C sharp test client\C sharp test client\bin\Debug\C sharp test client.pdb
-C:\Users\Administrator\Desktop\GoldenBeach\이진우\C sharp test client\C sharp test client\obj\Debug\C sharp test client.exe
-C:\Users\Administrator\Desktop\GoldenBeach\이진우\C sharp test client\C sharp test client\obj\Debug\C sharp test client.pdb
-C:\Users\Administrator\Desktop\GoldenBeach\이진우\C sharp test client\C sharp test client\obj\Debug\C sharp test client.csprojResolveAssemblyReference.cache
