@@ -85,13 +85,9 @@ public class DroneController : MonoBehaviour {
 		NyARMarkerSystemConfig config = new NyARMarkerSystemConfig(this._ss.width,this._ss.height);
 		
 		this._ms=new NyARUnityMarkerSystem(config);
-		mid=this._ms.addARMarker(
-			new StreamReader(new MemoryStream(((TextAsset)Resources.Load("patt_hiro",typeof(TextAsset))).bytes)),
-			16,25,80);
+		mid=this._ms.addARMarker((Texture2D)(Resources.Load("MarkerHiro", typeof(Texture2D))),16,25,80);
 		
-		mid=this._ms.addARMarker(
-			new StreamReader(new MemoryStream(((TextAsset)Resources.Load("patt_kanji",typeof(TextAsset))).bytes)),
-			16,25,80);
+		mid=this._ms.addARMarker(new StreamReader(new MemoryStream(((TextAsset)Resources.Load("patt_kanji",typeof(TextAsset))).bytes)),16,25,80);
 
 
 
@@ -136,10 +132,14 @@ public class DroneController : MonoBehaviour {
 
 		droneClient.Progress(AR.Drone.Client.Command.FlightMode.Progressive, pitch: pitch, roll: roll, gaz: gaz, yaw: yaw); 
 
-		if(Input.GetKeyDown(KeyCode.C))
+		if(Input.GetKeyDown(KeyCode.C)){
 			switchDroneCamera (AR.Drone.Client.Configuration.VideoChannelType.Horizontal);
-		else if(Input.GetKeyDown(KeyCode.V))
+			Debug.Log("Horizontal Camera");
+		}
+		else if(Input.GetKeyDown(KeyCode.V)){
 			switchDroneCamera (AR.Drone.Client.Configuration.VideoChannelType.Vertical);
+			Debug.Log("Vertical Camera");
+		}
 
 //		// Switch drone camera
 //		if (CameraForSwitchCheck.rotation.x >= SwitchRotation) {
@@ -175,28 +175,28 @@ public class DroneController : MonoBehaviour {
 
 		
 		if(this._ms.isExistMarker(0)){
-			this._ms.setMarkerTransform(0,GameObject.Find("MarkerObject1").transform);
+			this._ms.setMarkerTransform(0,GameObject.Find("MarkerObject").transform);
 			//update cube texture
 			//this._ms.getMarkerPlaneImage(mid,this._ss,-40,-40,80,80,(Texture2D)(GameObject.Find("Cube").GetComponent<Renderer>().material.mainTexture));
 		}
 		else{
 			// hide Game object
-			GameObject.Find("MarkerObject1").transform.localPosition=new UnityEngine.Vector3(-1000,-1000,-1000);
+			GameObject.Find("MarkerObject").transform.localPosition=new UnityEngine.Vector3(-1000,-1000,-1000);
 		}
 
-//		if(this._ms.isExistMarker(1)){
-//			this._ms.setMarkerTransform(1,GameObject.Find("MarkerObject1").transform);
-//
-//			Transform aaa;
-//			aaa=GameObject.Find("Cube1").transform;
-//			aaa.Translate(1,0,0);
-//
-//			//update cube texture
-//			//this._ms.getMarkerPlaneImage(mid,this._ss,-40,-40,80,80,(Texture2D)(GameObject.Find("Cube").GetComponent<Renderer>().material.mainTexture));
-//		}else{
-//			// hide Game object
-//			GameObject.Find("MarkerObject1").transform.localPosition=new UnityEngine.Vector3(0,0,-100);
-//		}
+		if(this._ms.isExistMarker(1)){
+			this._ms.setMarkerTransform(1,GameObject.Find("MarkerObject1").transform);
+
+			Transform aaa;
+			aaa=GameObject.Find("Cube1").transform;
+			aaa.Translate(1,0,0);
+
+			//update cube texture
+			//this._ms.getMarkerPlaneImage(mid,this._ss,-40,-40,80,80,(Texture2D)(GameObject.Find("Cube").GetComponent<Renderer>().material.mainTexture));
+		}else{
+			// hide Game object
+			GameObject.Find("MarkerObject1").transform.localPosition=new UnityEngine.Vector3(0,0,-100);
+		}
 
 
 

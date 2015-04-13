@@ -399,6 +399,8 @@
      <Compile Include="Assets\Scripts\ManagedWifiAPI\Interop.cs" />
      <Compile Include="Assets\Scripts\ManagedWifiAPI\WlanApi.cs" />
      <Compile Include="Assets\Scripts\MirrorCamera.cs" />
+     <Compile Include="Assets\bullet.cs" />
+     <Compile Include="Assets\picking.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
      <None Include="Assets\Shaders\3D Text Shader.shader" />

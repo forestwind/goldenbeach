@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\mouse.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\picking.cs">
     <Files>
-      <File FileName="Assets\mouse.cs" Line="16" Column="4" />
-      <File FileName="Assets\Scripts\DroneController.cs" Line="190" Column="20" />
+      <File FileName="Assets\bullet.cs" Line="18" Column="3" />
+      <File FileName="Assets\picking.cs" Line="37" Column="20" />
+      <File FileName="Assets\Scripts\DroneController.cs" Line="274" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
