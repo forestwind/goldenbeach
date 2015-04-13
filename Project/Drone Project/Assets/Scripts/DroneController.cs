@@ -125,21 +125,21 @@ public class DroneController : MonoBehaviour {
 //		{
 //			droneClient.Land();
 //		}
-
-		roll=Input.GetAxis("Horizontal");
-		pitch=-Input.GetAxis("Vertical");
-		yaw=Input.GetAxis("Horizontall");
-		gaz=-Input.GetAxis("Verticall");
-
-
-		//Debug.Log(roll);
-		
-
-
-//		droneClient.Progress(AR.Drone.Client.Command.FlightMode.Progressive, pitch: pitch, roll: roll, gaz: gaz, yaw: yaw); 
+//
+//		roll=Input.GetAxis("Horizontal");
+//		pitch=-Input.GetAxis("Vertical");
+//		yaw=Input.GetAxis("Horizontall");
+//		gaz=-Input.GetAxis("Verticall");
 
 		
-		switchDroneCamera (AR.Drone.Client.Configuration.VideoChannelType.Horizontal);
+
+
+		droneClient.Progress(AR.Drone.Client.Command.FlightMode.Progressive, pitch: pitch, roll: roll, gaz: gaz, yaw: yaw); 
+
+		if(Input.GetKeyDown(KeyCode.C))
+			switchDroneCamera (AR.Drone.Client.Configuration.VideoChannelType.Horizontal);
+		else if(Input.GetKeyDown(KeyCode.V))
+			switchDroneCamera (AR.Drone.Client.Configuration.VideoChannelType.Vertical);
 
 //		// Switch drone camera
 //		if (CameraForSwitchCheck.rotation.x >= SwitchRotation) {
@@ -181,7 +181,7 @@ public class DroneController : MonoBehaviour {
 		}
 		else{
 			// hide Game object
-			//GameObject.Find("MarkerObject1").transform.localPosition=new UnityEngine.Vector3(-1000,-1000,-1000);
+			GameObject.Find("MarkerObject1").transform.localPosition=new UnityEngine.Vector3(-1000,-1000,-1000);
 		}
 
 //		if(this._ms.isExistMarker(1)){
