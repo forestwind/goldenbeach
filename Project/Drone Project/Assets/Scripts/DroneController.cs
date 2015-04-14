@@ -56,7 +56,6 @@ public class DroneController : MonoBehaviour {
 
 		// set textures
 		cameraTexture = new Texture2D (width, height);
-
 		// Initialize drone
 		videoPacketDecoderWorker = new VideoPacketDecoderWorker(PixelFormat.BGR24, true, OnVideoPacketDecoded);
 		videoPacketDecoderWorker.Start();
@@ -68,7 +67,7 @@ public class DroneController : MonoBehaviour {
 		droneClient.Start ();
 
 		// activate main drone camera
-		switchDroneCamera (AR.Drone.Client.Configuration.VideoChannelType.Vertical);
+		switchDroneCamera (AR.Drone.Client.Configuration.VideoChannelType.Next);
 
 		// determine connection
 		client = new WlanClient();
@@ -103,14 +102,15 @@ public class DroneController : MonoBehaviour {
 		this._ss.start();
 
 
+
 	}
 
 	// Update is called once per frame
 	void Update () {
 
-		
-		convertCameraData ();
 
+		convertCameraData ();
+	
 
 
 //		if(Input.GetKeyDown(KeyCode.Z))
@@ -254,7 +254,6 @@ public class DroneController : MonoBehaviour {
 		cameraTexture.SetPixels32(colorArray);
 		cameraTexture.Apply();
 	}
-
 
 
 	/// <summary>

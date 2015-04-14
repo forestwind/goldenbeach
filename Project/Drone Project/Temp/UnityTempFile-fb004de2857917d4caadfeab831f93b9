@@ -409,6 +409,7 @@ Assets/Scripts/FFmpeg.AutoGen/FFmpegInvoke.cs
 Assets/Scripts/ManagedWifiAPI/Interop.cs
 Assets/Scripts/ManagedWifiAPI/WlanApi.cs
 Assets/Scripts/MirrorCamera.cs
+Assets/bullet.cs
 Assets/picking.cs
 -r:"D:\Program Files (x86)\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
 -r:"D:\Program Files (x86)\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"

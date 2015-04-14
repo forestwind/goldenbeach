@@ -3,18 +3,23 @@ using System.Collections;
 
 public class bullet : MonoBehaviour {
 
-	Transform destination;
-	Vector3 vector;
+	Vector3 destination;
+	public int speed=10000;
+
 	// Use this for initialization
 	void Start () {
+		destination = GameObject.Find("aim").transform.localPosition;
+		Debug.Log(destination);
 
-		destination = GameObject.Find("aim").transform;
-		vector=destination.transform.position;
-		GetComponent<Rigidbody>().AddForce(vector);
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		transform.Translate (destination.normalized * Time.deltaTime * speed);
+
+
+		if(transform.position.z > 1000)
+			Destroy(this.gameObject);
 
 	}
 }

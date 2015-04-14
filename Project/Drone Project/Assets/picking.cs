@@ -5,36 +5,39 @@ public class picking : MonoBehaviour {
 
 	public GameObject bullet;
 	public RaycastHit m_Hit;
-	public Vector3 point;
-	Vector3 initpoint;
+
+
 	// Use this for initialization
 	void Start () {
 	
 	}
-	
+
+
 	// Update is called once per frame
 	void Update () {
 
 
 		if ( Input.GetMouseButtonDown(0)){
 
-
 			Ray ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
-				if ( Physics.Raycast(ray,out m_Hit,100000))
-			    {
+				
+				if ( Physics.Raycast(ray,out m_Hit,100000)) {
+					
+					if( m_Hit.collider.tag == "WALL"){
 					GameObject.Find("aim").transform.localPosition = m_Hit.point;
-					point=m_Hit.point;
-					//Debug.Log(m_Hit.point);
-					firebullet(m_Hit.point);
-			    }
+					firebullet();
+					}
+
+				}
 		}
-	}
 
 
-	void firebullet(Vector3 destination)
+	} //update last
+
+
+	
+	void firebullet()
 	{
-		initpoint=GetComponent<Camera>().transform.position;
-		initpoint.z-=100;
-		Instantiate( bullet,initpoint, Quaternion.identity);
+		Instantiate( bullet,new Vector3(0,0,0), Quaternion.identity);
 	}
 }
