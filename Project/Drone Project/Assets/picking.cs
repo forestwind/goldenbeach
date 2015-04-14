@@ -23,10 +23,10 @@ public class picking : MonoBehaviour {
 				
 				if ( Physics.Raycast(ray,out m_Hit,100000)) {
 					
-					if( m_Hit.collider.tag == "WALL"){
+					//if( m_Hit.collider.tag == "WALL"){
 					GameObject.Find("aim").transform.localPosition = m_Hit.point;
 					firebullet();
-					}
+					//}
 
 				}
 		}
