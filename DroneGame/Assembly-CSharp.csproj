@@ -47,22 +47,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\FireCtrl.cs" />
-     <Compile Include="Assets\InstantGui\Scripts\Elements\InstantGuiButton.cs" />
-     <Compile Include="Assets\InstantGui\Scripts\Elements\InstantGuiElementsList.cs" />
-     <Compile Include="Assets\InstantGui\Scripts\Elements\InstantGuiGauge.cs" />
-     <Compile Include="Assets\InstantGui\Scripts\Elements\InstantGuiInputText.cs" />
-     <Compile Include="Assets\InstantGui\Scripts\Elements\InstantGuiList.cs" />
-     <Compile Include="Assets\InstantGui\Scripts\Elements\InstantGuiPopup.cs" />
-     <Compile Include="Assets\InstantGui\Scripts\Elements\InstantGuiSlider.cs" />
-     <Compile Include="Assets\InstantGui\Scripts\Elements\InstantGuiTabs.cs" />
-     <Compile Include="Assets\InstantGui\Scripts\Elements\InstantGuiTextArea.cs" />
-     <Compile Include="Assets\InstantGui\Scripts\Elements\InstantGuiToggle.cs" />
-     <Compile Include="Assets\InstantGui\Scripts\Elements\InstantGuiWindow.cs" />
-     <Compile Include="Assets\InstantGui\Scripts\InstantGui.cs" />
-     <Compile Include="Assets\InstantGui\Scripts\InstantGuiElement.cs" />
-     <Compile Include="Assets\InstantGui\Scripts\InstantGuiFrame.cs" />
-     <Compile Include="Assets\InstantGui\Scripts\InstantGuiStyle.cs" />
-     <Compile Include="Assets\InstantGui\Scripts\InstantGuiStyleSet.cs" />
      <Compile Include="Assets\NyARToolkitCS\src.markersystem\cs\markersystem\INyARMarkerSystemConfig.cs" />
      <Compile Include="Assets\NyARToolkitCS\src.markersystem\cs\markersystem\INyARMarkerSystemSquareDetect.cs" />
      <Compile Include="Assets\NyARToolkitCS\src.markersystem\cs\markersystem\INyARSingleCameraSystemObserver.cs" />
