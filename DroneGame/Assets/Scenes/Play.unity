@@ -146,8 +146,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 146, y: 60}
+  m_AnchoredPosition: {x: -.800000012, y: 0}
+  m_SizeDelta: {x: 99.5999985, y: 60}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &291911467
 GameObject:
@@ -186,7 +186,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -212,7 +212,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4.30000019, y: 0}
+  m_AnchoredPosition: {x: -4.5999999, y: -3.20000005}
   m_SizeDelta: {x: 1.75, y: -31.6000004}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &295722780
@@ -456,7 +456,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1097084790}
   m_LocalRotation: {x: .408217937, y: -.234569728, z: .109381661, w: .875426114}
-  m_LocalPosition: {x: 0, y: 8.60000038, z: 0}
+  m_LocalPosition: {x: 0, y: 8.67000008, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -604,7 +604,7 @@ GameObject:
   - 20: {fileID: 1511646731}
   - 114: {fileID: 1511646732}
   m_Layer: 0
-  m_Name: Drone
+  m_Name: DroneCamera
   m_TagString: DRONE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -744,9 +744,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1614407872}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: -.707106829}
+  m_LocalPosition: {x: 0, y: 0, z: 10000}
+  m_LocalScale: {x: -911.617981, y: 1, z: -659.234985}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2

@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 using UnityEngine.UI;
+
 
 public class GameUI : MonoBehaviour {
 	public Text timeText;
@@ -13,9 +15,8 @@ public class GameUI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
 		_time -= Time.deltaTime;
-		timeText.text = _time.ToString ();
+		timeText.text = _time.ToString("N1");
 		}
 
 }

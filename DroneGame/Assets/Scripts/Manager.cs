@@ -7,7 +7,7 @@ public class Manager : MonoBehaviour {
 	{
 		Debug.Log ("Scale X : "+ rt.localScale.x.ToString());
 
-		Application.LoadLevel ("test riftdrone");
+		Application.LoadLevel ("Play");
 	}
 
 }
