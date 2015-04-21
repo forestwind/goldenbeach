@@ -10,4 +10,10 @@ public class Manager : MonoBehaviour {
 		Application.LoadLevel ("Play");
 	}
 
+	public void OnClickExitBtn(RectTransform rt)
+	{
+		Debug.Log ("EXIT");
+		Application.Quit ();
+	}
+
 }

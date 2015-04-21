@@ -98,7 +98,7 @@ public class DroneController : MonoBehaviour {
 		//setup camera projection
 		this._ms.setARCameraProjection(this.GetComponent<Camera>());
 		//GameObject.Find("Cube").GetComponent<Renderer>().material.mainTexture=new Texture2D(64,64);
-		GameObject.Find("Cube").GetComponent<Renderer>().material.mainTexture=new Texture2D(64,64);
+		//GameObject.Find("Cube").GetComponent<Renderer>().material.mainTexture=new Texture2D(64,64);
 
 		//pick up
 		this._ss.start();
@@ -117,7 +117,7 @@ public class DroneController : MonoBehaviour {
 		
 			droneClient.Land ();
 
-			Application.LoadLevel("Main");
+			//Application.LoadLevel("Main");
 		}
 		
 
@@ -158,7 +158,7 @@ public class DroneController : MonoBehaviour {
 			//this._ms.getMarkerPlaneImage(mid,this._ss,-40,-40,80,80,(Texture2D)(GameObject.Find("Cube").GetComponent<Renderer>().material.mainTexture));
 		}else{
 			// hide Game object
-			GameObject.Find("MarkerObject").transform.localPosition=new UnityEngine.Vector3(0,0,-100);
+			//GameObject.Find("MarkerObject").transform.localPosition=new UnityEngine.Vector3(0,0,-100);
 		}
 //		if(this._ms.isExistMarker(1)){
 //			this._ms.setMarkerTransform(1,GameObject.Find("MarkerObject1").transform);
