@@ -15,8 +15,14 @@ public class GameUI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		_time -= Time.deltaTime;
-		timeText.text = _time.ToString("N1");
+		if (_time < 0.0f) {
+			_time = 0.0f;
+			timeText.text = _time.ToString ("N1");
+
+		} else {
+			_time -= Time.deltaTime;
+			timeText.text = _time.ToString ("N1");
 		}
+	}
 
 }

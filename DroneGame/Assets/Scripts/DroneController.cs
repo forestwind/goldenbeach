@@ -86,9 +86,7 @@ public class DroneController : MonoBehaviour {
 		
 		this._ms=new NyARUnityMarkerSystem(config);
 
-		mid=this._ms.addARMarker((Texture2D)(Resources.Load("MarkerHiro", typeof(Texture2D))),16,25,80);
-
-		mid=this._ms.addARMarker(new StreamReader(new MemoryStream(((TextAsset)Resources.Load("patt_kanji",typeof(TextAsset))).bytes)),16,25,80);
+		mid=this._ms.addARMarker((Texture2D)(Resources.Load("Marker1", typeof(Texture2D))),16,25,80);
 
 		//setup background
 		this._bg_panel=GameObject.Find("Plane");
@@ -112,8 +110,8 @@ public class DroneController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (gameUI._time < 0.0f) {
-			Debug.Log (gameUI._time);
+		if (gameUI._time < 0) {
+			//Debug.Log (gameUI._time);
 		
 			droneClient.Land ();
 
@@ -158,7 +156,7 @@ public class DroneController : MonoBehaviour {
 			//this._ms.getMarkerPlaneImage(mid,this._ss,-40,-40,80,80,(Texture2D)(GameObject.Find("Cube").GetComponent<Renderer>().material.mainTexture));
 		}else{
 			// hide Game object
-			//GameObject.Find("MarkerObject").transform.localPosition=new UnityEngine.Vector3(0,0,-100);
+			GameObject.Find("MarkerObject").transform.localPosition=new UnityEngine.Vector3(0,0,-100);
 		}
 //		if(this._ms.isExistMarker(1)){
 //			this._ms.setMarkerTransform(1,GameObject.Find("MarkerObject1").transform);

@@ -257,6 +257,7 @@
      <Compile Include="Assets\NyARUnityUtils\NyARUnitySensor.cs" />
      <Compile Include="Assets\NyARUnityUtils\NyARUnityUtil.cs" />
      <Compile Include="Assets\NyARUnityUtils\NyARUnityWebCam.cs" />
+     <Compile Include="Assets\OldChest\DemoScene\MouseOrbit.cs" />
      <Compile Include="Assets\Scripts\AR.Drone.Avionics\Apparatus\Input.cs" />
      <Compile Include="Assets\Scripts\AR.Drone.Avionics\Apparatus\Output.cs" />
      <Compile Include="Assets\Scripts\AR.Drone.Avionics\Autopilot.cs" />
@@ -406,9 +407,11 @@
      <Compile Include="Assets\Scripts\Manager.cs" />
      <Compile Include="Assets\Scripts\MirrorCamera.cs" />
      <Compile Include="Assets\bullet.cs" />
+     <Compile Include="Assets\itemCtrl.cs" />
      <Compile Include="Assets\picking.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
+     <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\Shaders\3D Text Shader.shader" />
      <None Include="Assets\Data\NyIdMarker.txt" />
      <None Include="Assets\Plugins\x86\donotdelete.txt" />
@@ -424,6 +427,10 @@
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{D323CC74-ADE8-DED9-758C-3DC8B8A1F7F1}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
