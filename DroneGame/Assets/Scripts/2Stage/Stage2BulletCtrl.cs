@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class picking : MonoBehaviour {
+public class Stage2BulletCtrl : MonoBehaviour {
 
 	public GameObject bullet;
 	public RaycastHit m_Hit;
@@ -16,7 +16,7 @@ public class picking : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-
+	
 		if ( Input.GetMouseButtonDown(0)){
 
 			Ray ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
@@ -24,7 +24,8 @@ public class picking : MonoBehaviour {
 				if ( Physics.Raycast(ray,out m_Hit,100000)) {
 					
 					//if( m_Hit.collider.tag == "WALL"){
-					GameObject.Find("aim").transform.localPosition = m_Hit.point;
+					//GameObject.Find("aim").transform.localPosition = m_Hit.point;
+					Debug.Log(m_Hit.point);
 					firebullet();
 					//}
 

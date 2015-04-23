@@ -6,11 +6,11 @@ using UnityEngine.UI;
 
 public class GameUI : MonoBehaviour {
 	public Text timeText;
-	public float _time;
+	public float _time = 10.0f;
 
 	// Use this for initialization
 	void Start () {
-		_time = 10.0f;	
+
 	}
 	
 	// Update is called once per frame

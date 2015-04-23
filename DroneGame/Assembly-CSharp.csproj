@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>D:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>D:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -258,6 +258,10 @@
      <Compile Include="Assets\NyARUnityUtils\NyARUnityUtil.cs" />
      <Compile Include="Assets\NyARUnityUtils\NyARUnityWebCam.cs" />
      <Compile Include="Assets\OldChest\DemoScene\MouseOrbit.cs" />
+     <Compile Include="Assets\Scripts\2Stage\Stage2BulletCtrl.cs" />
+     <Compile Include="Assets\Scripts\2Stage\Stage2MonsterCtrl.cs" />
+     <Compile Include="Assets\Scripts\2Stage\Stage2MonsterCtrl1.cs" />
+     <Compile Include="Assets\Scripts\2Stage\bullet.cs" />
      <Compile Include="Assets\Scripts\AR.Drone.Avionics\Apparatus\Input.cs" />
      <Compile Include="Assets\Scripts\AR.Drone.Avionics\Apparatus\Output.cs" />
      <Compile Include="Assets\Scripts\AR.Drone.Avionics\Autopilot.cs" />
@@ -406,9 +410,7 @@
      <Compile Include="Assets\Scripts\ManagedWifiAPI\WlanApi.cs" />
      <Compile Include="Assets\Scripts\Manager.cs" />
      <Compile Include="Assets\Scripts\MirrorCamera.cs" />
-     <Compile Include="Assets\bullet.cs" />
      <Compile Include="Assets\itemCtrl.cs" />
-     <Compile Include="Assets\picking.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
      <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
@@ -416,16 +418,16 @@
      <None Include="Assets\Data\NyIdMarker.txt" />
      <None Include="Assets\Plugins\x86\donotdelete.txt" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="System.Threading">
- <HintPath>C:/Users/com/Desktop/goldenbeach/DroneGame/Assets/Plugins/System.Threading.dll</HintPath>
+ <HintPath>D:/CriticalFile/GoldenBeach/DroneGame/Assets/Plugins/System.Threading.dll</HintPath>
  </Reference>
  <Reference Include="XInputDotNetPure">
- <HintPath>C:/Users/com/Desktop/goldenbeach/DroneGame/Assets/Plugins/XInputDotNetPure.dll</HintPath>
+ <HintPath>D:/CriticalFile/GoldenBeach/DroneGame/Assets/Plugins/XInputDotNetPure.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ <HintPath>D:/Program Files (x86)/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

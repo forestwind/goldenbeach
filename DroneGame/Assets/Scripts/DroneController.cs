@@ -50,14 +50,14 @@ public class DroneController : MonoBehaviour {
 	float pitch,roll,gaz,yaw;
 
 	// pick up
-	private NyARUnityMarkerSystem _ms;
+	public NyARUnityMarkerSystem _ms;
 	private NyARUnityWebCam _ss;
 	private int mid;//marker id
 	private GameObject _bg_panel;
 
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		Debug.Log("Start");
 		// initialize data array
 		data = new byte[width*height*3];
@@ -87,6 +87,14 @@ public class DroneController : MonoBehaviour {
 		this._ms=new NyARUnityMarkerSystem(config);
 
 		mid=this._ms.addARMarker((Texture2D)(Resources.Load("Marker1", typeof(Texture2D))),16,25,80);
+		mid=this._ms.addARMarker((Texture2D)(Resources.Load("Marker2", typeof(Texture2D))),16,25,80);
+		mid=this._ms.addARMarker((Texture2D)(Resources.Load("Marker3", typeof(Texture2D))),16,25,80);
+		mid=this._ms.addARMarker((Texture2D)(Resources.Load("Marker4", typeof(Texture2D))),16,25,80);
+		mid=this._ms.addARMarker((Texture2D)(Resources.Load("Marker5", typeof(Texture2D))),16,25,80);
+		mid=this._ms.addARMarker((Texture2D)(Resources.Load("Marker6", typeof(Texture2D))),16,25,80);
+		mid=this._ms.addARMarker((Texture2D)(Resources.Load("Marker7", typeof(Texture2D))),16,25,80);
+		mid=this._ms.addARMarker((Texture2D)(Resources.Load("Marker8", typeof(Texture2D))),16,25,80);
+		mid=this._ms.addARMarker((Texture2D)(Resources.Load("Marker9", typeof(Texture2D))),16,25,80);
 
 		//setup background
 		this._bg_panel=GameObject.Find("Plane");
@@ -121,19 +129,19 @@ public class DroneController : MonoBehaviour {
 
 		convertCameraData ();
 
-		//		if(Input.GetKeyDown(KeyCode.Z))
-		//		{
-		//			droneClient.Takeoff();
-		//		}
-		//		if(Input.GetKeyDown(KeyCode.X))
-		//		{
-		//			droneClient.Land();
-		//		}
-		//
-		//		roll=Input.GetAxis("Horizontal");
-		//		pitch=-Input.GetAxis("Vertical");
-		//		yaw=Input.GetAxis("Horizontall");
-		//		gaz=-Input.GetAxis("Verticall");
+				if(Input.GetKeyDown(KeyCode.Z))
+				{
+					droneClient.Takeoff();
+				}
+				if(Input.GetKeyDown(KeyCode.X))
+				{
+					droneClient.Land();
+				}
+		
+				roll=Input.GetAxis("Horizontal");
+				pitch=-Input.GetAxis("Vertical");
+				yaw=Input.GetAxis("Horizontall");
+				gaz=Input.GetAxis("Verticall");
 
 		droneClient.Progress(AR.Drone.Client.Command.FlightMode.Progressive, pitch: pitch, roll: roll, gaz: gaz, yaw: yaw); 
 
@@ -156,7 +164,7 @@ public class DroneController : MonoBehaviour {
 			//this._ms.getMarkerPlaneImage(mid,this._ss,-40,-40,80,80,(Texture2D)(GameObject.Find("Cube").GetComponent<Renderer>().material.mainTexture));
 		}else{
 			// hide Game object
-			GameObject.Find("MarkerObject").transform.localPosition=new UnityEngine.Vector3(0,0,-100);
+			GameObject.Find("MarkerObject").transform.localPosition=new UnityEngine.Vector3(0,0,-1000);
 		}
 //		if(this._ms.isExistMarker(1)){
 //			this._ms.setMarkerTransform(1,GameObject.Find("MarkerObject1").transform);
