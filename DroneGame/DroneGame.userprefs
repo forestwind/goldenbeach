@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DroneController.cs">
+    <Files>
+      <File FileName="Assets\Scripts\2Stage\Stage2BulletCtrl.cs" Line="27" Column="8" />
+      <File FileName="Assets\Scripts\DroneController.cs" Line="87" Column="46" />
+      <File FileName="Assets\Scripts\2Stage\Stage2MonsterCtrl.cs" Line="31" Column="36" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
